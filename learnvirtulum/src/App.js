@@ -3,15 +3,24 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "semantic-ui-css/semantic.min.css";
+
+import HeaderTop from "./components/header";
+import Footer from "./components/footer";
+//Teacher Routes
 import Login from "./components/Auth/Login";
 import Register from "./components/Auth/Register";
-import HeaderTop from "./components/header";
 import TeachersClass from "./components/teacher/teachersClass";
-import Footer from "./components/footer";
-import Profile from "./components/profilepage";
+import TeacherProfile from "./components/teacher/teacherprofile";
+import AddAssignment from "./components/teacher/addAssignment/addAssignment";
+import AddQuiz from "./components/teacher/addQuiz/addQuiz";
+import THome from "./components/teacher/teacherHome";
+
+//Student Routes
 import StudentsPage from "./components/student/studentsClass";
 import StudentLogin from "./components/Auth/StudentLogin";
 import StudentRegister from "./components/Auth/StudentRegister";
+import DowAssignment from "./components/student/dowAssignment/dowAssignment";
+import DowQuiz from "./components/student/dowQuiz/dowQuiz";
 
 export default function App() {
   return (
@@ -19,14 +28,19 @@ export default function App() {
       <Router>
         <HeaderTop />
         <Switch>
-          <Route exact path="/app" component={App} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
+          <Route exact path="/profile" component={TeacherProfile} />
+          <Route exact path="/" component={TeachersClass} />
+          <Route exact path="/tAssignment" component={AddAssignment} />
+          <Route exact path="/tQuiz" component={AddQuiz} />
+          <Route exact path="/tHome" component={THome} />
+
           <Route exact path="/slogin" component={StudentLogin} />
           <Route exact path="/sregister" component={StudentRegister} />
-          <Route exact path="/" component={TeachersClass} />
-          <Route exact path="/profile" component={Profile} />
           <Route exact path="/student" component={StudentsPage} />
+          <Route exact path="/sAssignment" component={DowAssignment} />
+          <Route exact path="/sQuiz" component={DowQuiz} />
         </Switch>
         <Footer />
       </Router>
