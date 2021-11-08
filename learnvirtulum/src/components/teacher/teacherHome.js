@@ -7,12 +7,11 @@ export default function THome() {
   return (
     <div>
       <NavigationBar />
-      <Grid columns={3}>
+      <Grid columns={2}>
         <Grid.Row>
           <Grid.Column width={4}>
             <Panel1 />
           </Grid.Column>
-          <Grid.Column width={6}></Grid.Column>
           <Grid.Column></Grid.Column>
         </Grid.Row>
       </Grid>
