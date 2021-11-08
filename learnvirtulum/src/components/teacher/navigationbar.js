@@ -28,7 +28,14 @@ export default function NavigationBar() {
 
       <Menu.Item
         as={Link}
-        to="/"
+        to="/tdashboard"
+        name="dashboard"
+        active={activeItem === "dashboard"}
+        onClick={handleItemClick}
+      />
+      <Menu.Item
+        as={Link}
+        to="/tHome"
         name="teacher"
         active={activeItem === "teacher"}
         onClick={handleItemClick}
@@ -36,7 +43,7 @@ export default function NavigationBar() {
 
       <Menu.Item
         as={Link}
-        to="/student"
+        to="/sHome"
         name="student"
         active={activeItem === "student"}
         onClick={handleItemClick}

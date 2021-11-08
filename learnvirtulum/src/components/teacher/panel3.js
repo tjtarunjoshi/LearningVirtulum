@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 export default function Panel3() {
   return (
-    <div>
+    <div><br/>
        <Grid centered verticalAlign='middle' className='panel3'>
     <Grid.Column style={{ maxWidth : 450 }}>
     <Icon name='paper plane' color='green' />
