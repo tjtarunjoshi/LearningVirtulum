@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Card, Image, Header, Message } from "semantic-ui-react";
 
-export default function SQuiz1() {
+export default function SHome1() {
   return (
     <div>
       <Header as="h2">
@@ -9,7 +9,19 @@ export default function SQuiz1() {
           circular
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZ-Q8Y1NCmDz42HwLrD2-K75uwiHc-XDsaA&usqp=CAU"
         />{" "}
-        Geography
+        English
+      </Header>
+      <hr />
+      <Message negative>
+        <Message.Header>No classes scheduled today</Message.Header>
+      </Message>
+      <hr />
+      <Header as="h2">
+        <Image
+          circular
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZ-Q8Y1NCmDz42HwLrD2-K75uwiHc-XDsaA&usqp=CAU"
+        />{" "}
+        History
       </Header>
       <hr />
       <Card.Group itemsPerRow={3}>
@@ -17,20 +29,10 @@ export default function SQuiz1() {
           <Card.Content>
             <Card.Header>Class 3-B</Card.Header>
             <Card.Meta>History</Card.Meta>
-            <Card.Description>30 Mins</Card.Description>
+            <Card.Description>8:00 AM - 9:00 AM</Card.Description>
             <Card.Description>French Revolution</Card.Description>
           </Card.Content>
-          <Button color="green">Join Quiz</Button>
-        </Card>
-
-        <Card>
-          <Card.Content>
-            <Card.Header>Class 3-B</Card.Header>
-            <Card.Meta>History</Card.Meta>
-            <Card.Description>30 Mins</Card.Description>
-            <Card.Description>Indian History</Card.Description>
-          </Card.Content>
-          <Button color="green">Join Quiz</Button>
+          <Button color="red">Join Class</Button>
         </Card>
       </Card.Group>
 
@@ -48,30 +50,20 @@ export default function SQuiz1() {
           <Card.Content>
             <Card.Header>Class 3-B</Card.Header>
             <Card.Meta>Science</Card.Meta>
-            <Card.Description>30 Mins</Card.Description>
+            <Card.Description>9:00 AM - 10:00 AM</Card.Description>
             <Card.Description>All about environment</Card.Description>
           </Card.Content>
-          <Button color="green">Join Quiz</Button>
+          <Button color="red">Join Class</Button>
         </Card>
 
         <Card>
           <Card.Content>
             <Card.Header>Class 3-B</Card.Header>
             <Card.Meta>Science</Card.Meta>
-            <Card.Description>30 Mins</Card.Description>
+            <Card.Description>2:00 PM - 3:00 PM</Card.Description>
             <Card.Description>States of Matter</Card.Description>
           </Card.Content>
-          <Button color="green">Join Quiz</Button>
-        </Card>
-
-        <Card>
-          <Card.Content>
-            <Card.Header>Class 3-B</Card.Header>
-            <Card.Meta>Science</Card.Meta>
-            <Card.Description>30 Mins</Card.Description>
-            <Card.Description>Reproduction in plants</Card.Description>
-          </Card.Content>
-          <Button color="green">Join Quiz</Button>
+          <Button color="red">Join Class</Button>
         </Card>
       </Card.Group>
 
@@ -89,20 +81,10 @@ export default function SQuiz1() {
           <Card.Content>
             <Card.Header>Class 3-B</Card.Header>
             <Card.Meta>Mathematics</Card.Meta>
-            <Card.Description>30 Mins</Card.Description>
+            <Card.Description>10:00 AM - 11:00 AM</Card.Description>
             <Card.Description>Algebraic Expressions</Card.Description>
           </Card.Content>
-          <Button color="green">Join Quiz</Button>
-        </Card>
-
-        <Card>
-          <Card.Content>
-            <Card.Header>Class 3-B</Card.Header>
-            <Card.Meta>Mathematics</Card.Meta>
-            <Card.Description>30 Mins</Card.Description>
-            <Card.Description>Trigonometric Functions</Card.Description>
-          </Card.Content>
-          <Button color="green">Join Quiz</Button>
+          <Button color="red">Join Class</Button>
         </Card>
       </Card.Group>
     </div>

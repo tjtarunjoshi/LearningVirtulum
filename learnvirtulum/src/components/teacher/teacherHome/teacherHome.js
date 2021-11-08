@@ -1,25 +1,20 @@
 import React from "react";
 import { Grid } from "semantic-ui-react";
 import Panel1 from "../panel1";
-import TQuiz1 from "./tQuiz1";
-import TQuiz2 from "./tQuiz2";
 import NavigationBar from "../navigationbar";
+import THome1 from "./tHome1";
 
-export default function AddQuiz() {
+export default function THome() {
   return (
-    <div className="teacher">
+    <div>
       <NavigationBar />
-      <Grid columns={3}>
+      <Grid columns={2}>
         <Grid.Row>
           <Grid.Column width={4}>
             <Panel1 />
           </Grid.Column>
-          <Grid.Column width={6}>
-            <TQuiz1 />
-          </Grid.Column>
-          <Grid.Column>
-            <br />
-            <TQuiz2 />
+          <Grid.Column width={8}>
+            <THome1 />
           </Grid.Column>
         </Grid.Row>
       </Grid>

@@ -51,7 +51,7 @@ export default function Login() {
                 />
               </Form.Field>
 
-              <Button color="blue" fluid size="large">
+              <Button as={Link} to="/tHome" color="blue" fluid size="large">
                 Login
               </Button>
             </Segment>

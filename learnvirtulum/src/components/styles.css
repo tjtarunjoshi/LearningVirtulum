@@ -1,5 +1,8 @@
 html,
-body,
+body {
+  padding: 0.5em;
+  background: white;
+}
 .app {
   position: relative;
   background: rgb(241, 240, 240);
@@ -7,13 +10,9 @@ body,
   padding-bottom: 0;
 }
 
-.teacher {
-  margin-top: 10px;
-}
-
 .panel1 {
   width: 30vh;
-  padding: 1em;
+  padding-left: 1em;
 }
 
 .footer {
@@ -32,7 +31,10 @@ body,
 
 .panel3 {
   background-color: rgb(228, 227, 227);
-  
+
   border: 1px solid rgb(194, 193, 193);
 }
 
+.dashboard {
+  padding-left: 1em;
+}

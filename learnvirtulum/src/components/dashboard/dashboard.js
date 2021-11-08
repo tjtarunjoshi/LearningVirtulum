@@ -1,24 +1,24 @@
 import React from "react";
-import { Grid } from "semantic-ui-react";
-import Panel1 from "./panel1";
-import TeacherProfile from "./teacherprofile";
-import Panel2 from "./panel2";
-import Panel3 from "./panel3";
+import { Grid, Divider } from "semantic-ui-react";
+import Dashboard1 from "./dashboard1";
+import Dashboard2 from "./dashboard2";
+import Dashboard3 from "./dashboard3";
 
-export default function Teacher() {
+export default function Dashboard() {
   return (
     <div>
       <Grid columns={3}>
         <Grid.Row>
           <Grid.Column width={4}>
-            <Panel1 />
+            <Dashboard1 />
           </Grid.Column>
           <Grid.Column width={6}>
-            <Panel2 />
+            <Dashboard2 />
           </Grid.Column>
           <Grid.Column>
-            <Panel3 />
+            <Dashboard3 />
           </Grid.Column>
+          <Divider vertical />
         </Grid.Row>
       </Grid>
     </div>

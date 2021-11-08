@@ -13,7 +13,9 @@ import TeachersClass from "./components/teacher/teachersClass";
 import TeacherProfile from "./components/teacher/teacherprofile";
 import AddAssignment from "./components/teacher/addAssignment/addAssignment";
 import AddQuiz from "./components/teacher/addQuiz/addQuiz";
-import THome from "./components/teacher/teacherHome";
+import THome from "./components/teacher/teacherHome/teacherHome";
+import TMessage from "./components/teacher/tMessage/tMessage";
+import TDashboard from "./components/teacher/teacherDashboard";
 
 //Student Routes
 import StudentsPage from "./components/student/studentsClass";
@@ -21,6 +23,9 @@ import StudentLogin from "./components/Auth/StudentLogin";
 import StudentRegister from "./components/Auth/StudentRegister";
 import DowAssignment from "./components/student/dowAssignment/dowAssignment";
 import DowQuiz from "./components/student/dowQuiz/dowQuiz";
+import SDashboard from "./components/student/studentDashboard";
+import SMessage from "./components/student/sMessage/sMessage";
+import SHome from "./components/student/studentHome/studentHome";
 
 export default function App() {
   return (
@@ -35,13 +40,20 @@ export default function App() {
           <Route exact path="/tAssignment" component={AddAssignment} />
           <Route exact path="/tQuiz" component={AddQuiz} />
           <Route exact path="/tHome" component={THome} />
+          <Route exact path="/tMessage" component={TMessage} />
+          <Route exact path="/tdashboard" component={TDashboard} />
 
           <Route exact path="/slogin" component={StudentLogin} />
           <Route exact path="/sregister" component={StudentRegister} />
           <Route exact path="/student" component={StudentsPage} />
           <Route exact path="/sAssignment" component={DowAssignment} />
           <Route exact path="/sQuiz" component={DowQuiz} />
+          <Route exact path="/sdashboard" component={SDashboard} />
+          <Route exact path="/sMessage" component={SMessage} />
+          <Route exact path="/sHome" component={SHome} />
         </Switch>
+        <br />
+        <br />
         <Footer />
       </Router>
     </div>
