@@ -11,7 +11,7 @@ export default function Student() {
           <Grid.Column width={4}>
             <SPanel1 />
           </Grid.Column>
-          <Grid.Column width={6}>
+          <Grid.Column width={10}>
             <SPanel2 />
           </Grid.Column>
         </Grid.Row>

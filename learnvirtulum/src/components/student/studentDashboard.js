@@ -1,12 +1,12 @@
 import React from "react";
 import SNavigationBar from "./snavigationbar";
-import Student from "./student";
+import Dashboard from "../dashboard/dashboard";
 
-export default function StudentsPage() {
+export default function SDashboard() {
   return (
     <div>
       <SNavigationBar />
-      <Student />
+      <Dashboard />
     </div>
   );
 }
