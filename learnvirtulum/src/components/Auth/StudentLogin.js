@@ -9,8 +9,8 @@ import {
   Icon
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import { auth } from "../../firebaseConfig";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+// import { auth } from "../../firebaseConfig";
+// import { createUserWithEmailAndPassword } from "firebase/auth";
 
 export default function StudentLogin() {
   return (
@@ -39,7 +39,7 @@ export default function StudentLogin() {
                 <input
                   name="email"
                   placeholder="Type your email-id"
-                  onChange={(event) => setEmail(event.target.value)}
+                  // onChange={(event) => setEmail(event.target.value)}
                   type="email"
                 />
               </Form.Field>
@@ -49,7 +49,7 @@ export default function StudentLogin() {
                 <input
                   name="password"
                   placeholder="Type your email-id"
-                  onChange={(event) => setPassword(event.target.value)}
+                  // onChange={(event) => setPassword(event.target.value)}
                   type="password"
                 />
               </Form.Field>
