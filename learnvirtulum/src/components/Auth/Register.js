@@ -9,8 +9,8 @@ import {
   Icon
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import { auth } from "../../firebaseConfig";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+// import { auth } from "../../firebaseConfig";
+// import { createUserWithEmailAndPassword } from "firebase/auth";
 
 export default function Register() {
   const [userType, setUserType] = useState("teacher");
@@ -18,61 +18,61 @@ export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
-  const [errors, setError] = useState([]);
+  // const [errors, setError] = useState([]);
 
-  const isFormValid = () => {
-    let errors = [];
-    let error;
-    if (isFormEmpty(useState)) {
-      error = { message: "Fill in all the fields" };
-      setError({ errors: errors.concat(error) });
-      return false;
-    } else if (!isPasswordValid(useState)) {
-      error = { message: "Password is invalid" };
-      setError({ errors: errors.concat(error) });
-      return false;
-    } else {
-      return true;
-    }
-  };
+  // const isFormValid = () => {
+  //   let errors = [];
+  //   let error;
+  //   if (isFormEmpty(useState)) {
+  //     error = { message: "Fill in all the fields" };
+  //     setError({ errors: errors.concat(error) });
+  //     return false;
+  //   } else if (!isPasswordValid(useState)) {
+  //     error = { message: "Password is invalid" };
+  //     setError({ errors: errors.concat(error) });
+  //     return false;
+  //   } else {
+  //     return true;
+  //   }
+  // };
 
-  const isFormEmpty = ({ username, email, password, passwordConfirm }) => {
-    return (
-      !username.length ||
-      !email.length ||
-      !password.length ||
-      !passwordConfirm.length
-    );
-  };
+  // const isFormEmpty = ({ username, email, password, passwordConfirm }) => {
+  //   return (
+  //     !username.length ||
+  //     !email.length ||
+  //     !password.length ||
+  //     !passwordConfirm.length
+  //   );
+  // };
 
-  const isPasswordValid = ({ password, passwordConfirm }) => {
-    if (password.length < 6 || passwordConfirm.length < 6) {
-      return false;
-    } else if (password !== passwordConfirm) {
-      return false;
-    } else {
-      return true;
-    }
-  };
+  // const isPasswordValid = ({ password, passwordConfirm }) => {
+  //   if (password.length < 6 || passwordConfirm.length < 6) {
+  //     return false;
+  //   } else if (password !== passwordConfirm) {
+  //     return false;
+  //   } else {
+  //     return true;
+  //   }
+  // };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
 
     //    if (isFormValid()) {
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        console.log(user);
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorCode + errorMessage);
-        alert(errorMessage);
-        // ..
-      });
-  };
+  //   createUserWithEmailAndPassword(auth, email, password)
+  //     .then((userCredential) => {
+  //       // Signed in
+  //       const user = userCredential.user;
+  //       console.log(user);
+  //     })
+  //     .catch((error) => {
+  //       const errorCode = error.code;
+  //       const errorMessage = error.message;
+  //       console.log(errorCode + errorMessage);
+  //       alert(errorMessage);
+  //       // ..
+  //     });
+  // };
   //};
 
   return (
@@ -150,7 +150,7 @@ export default function Register() {
                 />
               </Form.Field>
 
-              <Button onClick={handleSubmit} color="blue" fluid size="large">
+              <Button  color="blue" fluid size="large">
                 Submit
               </Button>
             </Segment>
